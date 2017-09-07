@@ -1,23 +1,9 @@
-/*
- * Copyright (c) 2016 ObjectLabs Corporation
- * Distributed under the MIT license - http://opensource.org/licenses/MIT
- *
- * Written with: mongodb@2.1.3
- * Documentation: http://mongodb.github.io/node-mongodb-native/
- * A Node script connecting to a MongoDB database given a MongoDB Connection URI.
-*/
-
-// server.js
-// where your node app starts
-
-// init project
 var express = require('express');
 var mongodb = require('mongodb');
 var app = express();
 
 app.use(express.static('public'));
 
-// Standard URI format: mongodb://[dbuser:dbpassword@]host:port/dbname, details set in .env
 var uri = 'mongodb://'+process.env.USER+':'+process.env.PASS+'@'+process.env.HOST+':'+process.env.PORT+'/'+process.env.DB;
 
 mongodb.MongoClient.connect(uri, function(err, db) {
