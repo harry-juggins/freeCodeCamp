@@ -1,17 +1,23 @@
 {
-	"name": "fcc-learn-npm-package-json",
-	"dependencies": {
-		"express": "^4.14.0"
-	},
+	"name": "mongodb",
+	"version": "0.0.1",
+	"description": "Example app interacting with MongoDB",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
 	},
+	"dependencies": {
+		"express": "^4.12.4",
+		"mongodb": "*"
+	},
 	"engines": {
 		"node": "4.4.5"
 	},
-	"repository": {
-		"type": "git",
-		"url": "https://idontknow/todo.git"
-	}
+	"keywords": [
+		"node",
+		"express",
+		"mongodb",
+		"database"
+	],
+	"license": "MIT"
 }
